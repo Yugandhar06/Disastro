@@ -1,0 +1,96 @@
+/* ✅ Overall Weather Dashboard Layout */
+.weather-dashboard {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ✅ Centering everything */
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  /* ✅ Centered Search Bar */
+  .search-container {
+    display: flex;
+    justify-content: center; /* ✅ Centering horizontally */
+    align-items: center;
+    margin: 20px auto;
+    width: 50%; /* ✅ Controls width */
+  }
+  
+  .search-container input {
+    padding: 12px;
+    font-size: 18px;
+    width: 400px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center; /* ✅ Centers text inside input */
+  }
+  
+  .search-container button {
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  /* ✅ Weather Info Box */
+  .weather-info {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #0f0909;
+    width: 60%;
+    text-align: center;
+  }
+  
+  /* ✅ Hourly Forecast (Scrollable) */
+  .hourly-forecast {
+    margin-top: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .hourly-items {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .hour-item {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #a42a2a;
+    text-align: center;
+    min-width: 120px;
+  }
+  
+  /* ✅ Multi-Day Forecast Section */
+  .multi-day-forecast {
+    margin-top: 30px;
+  }
+  
+  .forecast-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .forecast-item {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #120808;
+    text-align: center;
+    width: 80%; /* ✅ Expands forecast cards */
+    margin: 0 auto; /* ✅ Ensures full centering */
+  }
+  

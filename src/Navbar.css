@@ -1,0 +1,138 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #b00000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(255, 87, 51, 0.3);
+  height: 60px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-links a,
+.dropdown-trigger {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav-links a:hover,
+.dropdown-trigger:hover {
+  color: #121212;
+}
+
+/* 🔽 Dropdown container handles entire hover area */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-container:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background-color: #282828;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #b00000;
+  color: white;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-user span {
+  color: white;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.navbar-user button {
+  background-color: white;
+  color: #b00000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar-user button:hover {
+  background-color: #b00000;
+  color: white;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .dropdown-container:hover .dropdown-menu {
+    display: block;
+  }
+}

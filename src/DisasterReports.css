@@ -1,0 +1,102 @@
+/* ✅ Full-Screen Layout for Disaster Reports */
+.disaster-reports {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    padding: 40px;
+    background-color: #160c0c; /* Light background for visibility */
+  }
+  
+  /* ✅ Disaster Report Container */
+  .report-container {
+    width: 80%; /* Reduced width for better centering */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* ✅ Report Header */
+  .report-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333; /* Dark color for visibility */
+  }
+  
+  /* ✅ Live Disasters Section */
+  .live-disasters {
+    width: 100%; /* Full width within container */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* ✅ Each Disaster Report */
+  .disaster-item {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* White background for contrast */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Full width within container */
+    margin: 10px 0;
+    border-left: 5px solid #ff4500; /* Red left border for emphasis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* ✅ User Reports Section */
+  .user-reports {
+    width: 100%; /* Full width within container */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 30px;
+  }
+  
+  /* ✅ Each User Report */
+  .user-report-item {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* White background for contrast */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Full width within container */
+    margin: 10px 0;
+    border-left: 5px solid #007BFF; /* Blue left border for emphasis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* ✅ Input Fields */
+  input, textarea {
+    width: 100%; /* Full width within container */
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc; /* Light border for visibility */
+    font-size: 16px;
+  }
+  
+  /* ✅ Submit Report Button */
+  button {
+    padding: 12px 18px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff4500; /* Orange button color */
+    color: white; /* White text for contrast */
+    display: block;
+    margin: 10px auto; /* Center the button horizontally */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  button:hover {
+    background-color: #e63900; /* Darker shade on hover */
+  }
+  

@@ -1,0 +1,17 @@
+.precautions-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .precaution-section {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  iframe {
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  

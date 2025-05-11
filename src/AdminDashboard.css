@@ -1,0 +1,58 @@
+/* Admin Dashboard Layout */
+.admin-dashboard {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    min-height: 100vh; /* Full-screen height */
+  }
+  
+  .admin-dashboard h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .admin-dashboard p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Reports List Styling */
+  .reports-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  .report-card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: left;
+  }
+  
+  .report-card h4 {
+    margin-bottom: 10px;
+  }
+  
+  .resolve-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .resolve-button:hover {
+    background-color: #218838;
+  }
+  

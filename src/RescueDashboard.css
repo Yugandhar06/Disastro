@@ -1,0 +1,47 @@
+.rescue-dashboard {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+  }
+  
+  .emergency-alerts {
+    background: #ff3c3c;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .disaster-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .disaster-item {
+    background: #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .disaster-visualization {
+    margin-top: 20px;
+  }
+  
+  .task-assignments, .resource-availability {
+    background: #444;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .response-mapping img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

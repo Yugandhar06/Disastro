@@ -1,0 +1,53 @@
+.report-disaster-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .report-disaster-container h2 {
+    text-align: center;
+    color: #b00000;
+  }
+  
+  .report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .report-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .report-form input,
+  .report-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .report-form button {
+    padding: 10px;
+    background-color: #b00000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .report-form button:hover {
+    background-color: #900000;
+  }
+  
+  .success {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+  }
+  

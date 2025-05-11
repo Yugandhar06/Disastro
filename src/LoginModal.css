@@ -1,0 +1,171 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(4px);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    min-height: 520px;
+    position: relative;
+    box-shadow: 0 8px 30px rgba(255, 0, 0, 0.3);
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 24px;
+    color: #b00000;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  
+  .modal-content input,
+  .modal-content select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: white;
+    margin-bottom: 18px;
+    transition: border 0.2s ease;
+    outline: none;
+  }
+  
+  .modal-content input:focus,
+  .modal-content select:focus {
+    border: 1px solid #b00000;
+  }
+  
+  .modal-content input::placeholder {
+    color: #ccc;
+  }
+  
+  .modal-content select option[disabled] {
+    color: #999;
+  }
+  
+  .modal-content .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal-content button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #b00000;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-content button[type="submit"]:hover {
+    background-color: #9b0000;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .close-modal:hover {
+    color: #b00000;
+  }
+  
+  .toggle-auth {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .toggle-auth span {
+    color: #b00000;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .toggle-auth span:hover {
+    text-decoration: underline;
+  }
+  
+  /* Flip container */
+  .flip-card {
+    perspective: 1000px;
+    width: 100%;
+    max-width: 400px;
+    height: 520px;
+    position: relative;
+  }
+  
+  /* Inner container that flips */
+  .flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+  }
+  
+  /* Trigger flip when signup is active */
+  .flip-inner.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  /* Both faces of the flip */
+  .flip-front,
+  .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  /* Back side (Sign Up) is rotated */
+  .flip-back {
+    transform: rotateY(180deg);
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: left;
+  }

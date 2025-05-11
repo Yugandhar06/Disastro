@@ -1,0 +1,74 @@
+.disaster-alerts-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #b00000;
+  }
+  
+  .alerts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .alert-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 280px;
+    text-align: left;
+  }
+  
+  .alert-card h3 {
+    color: #b00000;
+  }
+  
+  .alert-card p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  /* ✅ Custom Colors for Severity Levels */
+  .low {
+    border-left: 5px solid #2ecc71;
+  }
+  
+  .moderate {
+    border-left: 5px solid #f1c40f;
+  }
+  
+  .high {
+    border-left: 5px solid #e74c3c;
+  }
+  
+  .severity-label {
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 5px;
+  }
+  
+  .severity-label.low {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .severity-label.moderate {
+    background-color: #f1c40f;
+    color: white;
+  }
+  
+  .severity-label.high {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .no-alerts {
+    color: gray;
+    font-size: 16px;
+  }
+  

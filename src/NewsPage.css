@@ -1,0 +1,50 @@
+/* Page Container */
+.news-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5; /* Light background for contrast */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+  background-color: #4ca1af;
+  padding: 10px;
+  color: white;
+}
+
+/* Each News Section */
+.news-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Each section takes up full viewport height */
+  width: 100vw; /* Full width */
+  background-color: #1a1313; /* White background for sections */
+  border-bottom: 4px solid #ddd; /* Divider between sections */
+}
+
+/* Channel Title */
+.channel-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Embedded News Stream */
+.news-stream {
+  width: 100%; /* Full width */
+  height: 90%; /* Nearly full viewport */
+  border: none;
+  position: relative;
+  top: -50px; /* Adjust this value to crop the top branding */
+  height: calc(100% + 50px); /* Extend height to compensate for cropping */
+}
+

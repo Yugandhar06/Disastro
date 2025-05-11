@@ -1,0 +1,49 @@
+/* General Layout for FAQs Page */
+.faqs {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    padding: 20px;
+    margin: 0;
+    background-color: #f9f9f9; /* Light background color */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title Styling */
+  .faqs h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* FAQ List Styling */
+  .faq-list {
+    width: 90%;
+    max-width: 800px; /* Restrict width for readability */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+    padding: 20px;
+    text-align: left; /* Align text within the FAQ list */
+  }
+  
+  /* Individual FAQ Item Styling */
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .faq-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6; /* Improve readability */
+  }
+  

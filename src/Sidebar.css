@@ -1,0 +1,80 @@
+/* 📌 Sidebar Layout */
+.sidebar {
+  width: 50px; /* Thin collapsed width */
+  height: calc(100vh - 60px); /* Below navbar */
+  background: #1E1E1E;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding: 10px;
+  box-shadow: 2px 0px 15px rgba(255, 87, 51, 0.3);
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 900; /* Below navbar */
+  overflow: hidden;
+}
+
+/* ✅ Expand sidebar on hover */
+.sidebar:hover {
+  width: 220px; /* Expanded width */
+}
+
+/* ✅ Sidebar Adjusts Main Content */
+.sidebar-open .dashboard {
+  margin-left: 220px; /* Matches expanded sidebar */
+}
+
+/* 🔴 Close Button */
+.close-sidebar-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* ✅ Hover Effect */
+.close-sidebar-btn:hover {
+  color: #FF5733;
+}
+
+/* 📌 Sidebar Links */
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  white-space: nowrap;
+}
+
+/* ✅ Keep icons visible before expansion */
+.sidebar-links a i {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* ✅ Hide text labels before expansion */
+.sidebar-links a span {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* ✅ Show text labels when sidebar expands */
+.sidebar:hover .sidebar-links a span {
+  opacity: 1;
+}
